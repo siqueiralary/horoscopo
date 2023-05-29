@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Loved+by+the+King&family=Stylish&family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EscolhaCaso</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Horóscopo</h1>
+    <input type="text" id="signos"><br>
+    <button onclick="escolhaSigno()">Escolha Signo</button>
+    <div id="frase"></div>
+
+    <script>
+        function escolhaSigno(){
+            var texto = "";
+            var signo = document.querySelector("#signos").value;
+
+            switch (signo){
+                case "Áries":
+                texto = "21 de março (21/03) a 20 de abril (20/04) - Os mais estressadinho do zodíaco, os arianos são impulsivos, determinados e nada pacientes. Frase: “Não sei bem o que quero, só sei que quero JÁ!’"
+
+                break;
+
+                case "aries":
+                texto = "21 de março (21/03) a 20 de abril (20/04) - Os mais estressadinho do zodíaco, os arianos são impulsivos, determinados e nada pacientes. Frase: “Não sei bem o que quero, só sei que quero JÁ!’"
+                break;
+
+                case "Touro":
+                texto = "21 de abril (21/04) a 20 de maio (20/05) - Tão calmos e apegados, mas pisa no calo deles para ver o que acontece. Não vamos esquecer da fome sem fim que eles têm! Frase: ‘Amor numa cabana? Só se for 5 ESTRELAS’."
+                break;
+
+                case "touro":
+                texto = "21 de abril (21/04) a 20 de maio (20/05) - Tão calmos e apegados, mas pisa no calo deles para ver o que acontece. Não vamos esquecer da fome sem fim que eles têm! Frase: ‘Amor numa cabana? Só se for 5 ESTRELAS’."
+                break;
+
+                case "Gêmeos":
+                texto = "21 de maio (21/05) a 20 de junho (20/06) - Donos da razão e falantes, com essa junção não dá nem para tentar discutir com eles. Frase: ‘Odeio fofocas… Mas… já te contei a última?’"
+                break;
+
+                case "gemeos":
+                texto = "21 de maio (21/05) a 20 de junho (20/06) - Donos da razão e falantes, com essa junção não dá nem para tentar discutir com eles. Frase: ‘Odeio fofocas… Mas… já te contei a última?’"
+                break;
+
+                case "Câncer":
+                texto = "21 de junho (21/06) a 21 de julho (21/07) - Os cancerianos são regidos pela Lua, o que os tornam emotivos(e muitas vezes dramáticos). Frase: ‘Lar… Meu doce LAR!’"
+                break;
+
+                case "cancer":
+                texto = "21 de junho (21/06) a 21 de julho (21/07) - Os cancerianos são regidos pela Lua, o que os tornam emotivos(e muitas vezes dramáticos). Frase: ‘Lar… Meu doce LAR!’"
+                break;
+
+                case "Leão":
+                texto = "22 de julho (22/07) a 22 de agosto (22/08) - Os leoninos são regidos pelo Sol, o que os fazem ser decididos (e terem a impressão de que são o prórpio sol). Frase: ‘Antigamente EU era vaidoso, mas agora me curei e estou PERFEITO!’"
+                break;
+
+                case "leao":
+                texto = "22 de julho (22/07) a 22 de agosto (22/08) - Os leoninos são regidos pelo Sol, o que os fazem ser decididos (e terem a impressão de que são o prórpio sol). Frase: ‘Antigamente EU era vaidoso, mas agora me curei e estou PERFEITO!’"
+                break;
+
+                case "Virgem":
+                texto = "23 de agosto (23/08) a 22 de setembro (22/09) - Os virginianos são regidos pelo planeta Mercúrio, por isso possuem facilidade em se comunicar assim como os geminianos. Frase: ‘Já te disse que sou SUPER DEMOCRATA… mas porque você ainda não fez o que eu MANDEI?’"
+                break;
+
+                case "virgem":
+                texto = "23 de agosto (23/08) a 22 de setembro (22/09) - Os virginianos são regidos pelo planeta Mercúrio, por isso possuem facilidade em se comunicar assim como os geminianos. Frase: ‘Já te disse que sou SUPER DEMOCRATA… mas porque você ainda não fez o que eu MANDEI?’"
+                break;
+
+                case "Libra":
+                texto = "23 de setembro (23/09) a 22 de outubro (22/10) - Os librianos são regidos pelo planeta Vênus, o que os fazer admirar a beleza das coisas assim como os taurinos. Frase: ‘A justiça tarda mas não falha, pois está sempre COMIGO’."
+                break;
+
+                case "libra":
+                texto = "23 de setembro (23/09) a 22 de outubro (22/10) - Os librianos são regidos pelo planeta Vênus, o que os fazer admirar a beleza das coisas assim como os taurinos. Frase: ‘A justiça tarda mas não falha, pois está sempre COMIGO’."
+                break;
+
+                case "Escorpião":
+                texto = "23 de outubro (23/10) a 21 de novembro (21/11) - Os escorpianos são regidos pelo planeta Marte, o que os tornam intensos e atraentes assim como os arianos. Frase: ‘Sou super LIBERAL… mas onde você foi, MESMO?’"
+                break;
+
+                case "escorpiao":
+                texto = "23 de outubro (23/10) a 21 de novembro (21/11) - Os escorpianos são regidos pelo planeta Marte, o que os tornam intensos e atraentes assim como os arianos. Frase: ‘Sou super LIBERAL… mas onde você foi, MESMO?’"
+                break;
+
+                case "Sagitário":
+                texto = "22 de novembro (22/11) a 21 de dezembro (21/12) - Os sagitarianos são regidos pelo planeta Júpiter, o que os fazem ser independentes e livres. Frase: ‘Já te disse 1.000.000 de vezes que NUNCA EXAGERO!’"
+                break;
+
+                case "sagitario":
+                texto = "22 de novembro (22/11) a 21 de dezembro (21/12) - Os sagitarianos são regidos pelo planeta Júpiter, o que os fazem ser independentes e livres. Frase: ‘Já te disse 1.000.000 de vezes que NUNCA EXAGERO!’"
+                break;
+
+                case "Capricórnio":
+                texto = "22 de dezembro (22/12) a 21 de janeiro (21/01) - Os capricornianos são regidos pelo planeta Saturno, o que os fazem ser discretos e sábios. Frase: ‘HOJE assumi o cargo de vice-diretor de uma empresa que ORGANIZAREI, e será sucesso daqui a 10 ANOS’."
+                break;
+
+                case "capricornio":
+                texto = "22 de dezembro (22/12) a 21 de janeiro (21/01) - Os capricornianos são regidos pelo planeta Saturno, o que os fazem ser discretos e sábios. Frase: ‘HOJE assumi o cargo de vice-diretor de uma empresa que ORGANIZAREI, e será sucesso daqui a 10 ANOS’."
+                break;
+
+                case "Aquário":
+                texto = "22 de janeiro (22/01) a 19 de fevereiro (19/02) - Os aquarianos são regidos pelo planeta Saturno, assim como os capricornianos eles presam pela discrição. Frase: ‘Já estou guardando grana, para construir a NOSSA bela casa lá na LUA’."
+                break;
+
+                case "aquario":
+                texto = "22 de janeiro (22/01) a 19 de fevereiro (19/02) - Os aquarianos são regidos pelo planeta Saturno, assim como os capricornianos eles presam pela discrição. Frase: ‘Já estou guardando grana, para construir a NOSSA bela casa lá na LUA’."
+                break;
+
+                case "Peixes":
+                texto = "20 de fevereiro (20/02) a 20 de março (20/03) - Os piscianos são regidos pelo planeta Netuno, o que os tornam sensíveis e compassivos. Frase: ‘Ontem tinha DÚVIDAS, hoje… NÃO SEI!’"
+                break;
+
+                case "peixes":
+                texto = "20 de fevereiro (20/02) a 20 de março (20/03) - Os piscianos são regidos pelo planeta Netuno, o que os tornam sensíveis e compassivos. Frase: ‘Ontem tinha DÚVIDAS, hoje… NÃO SEI!’"
+                break;
+
+                default:
+                texto = "Insira um signo existente"
+            }
+
+            document.getElementById("frase").innerHTML = texto
+
+        }
+    </script>
+    </div>
+    <br><br>
+    <footer class="fixarRodape">
+        <small>
+            2023 &copy; All Rights Reserved - Laryssa Siqueira
+        </small>
+    </footer>
+    
+</body>
+</html>
